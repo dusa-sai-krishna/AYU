@@ -3,48 +3,46 @@
 <head>
     <title>AYU-Doc</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../static/homePage.css">
+    <link rel="stylesheet" href="../static/adminUserInfo.css">
 
 </head>
 <body>
-    
-<div id="header">
-    <nav class="navbar navbar-expand-lg">
-        <h1>AYU</h1>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="/logout" class="btn btn-danger">Logout</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</div>
-    
-    <div id="main">
-        <div id="left-main">
+<div id="main">
+    <div id="header">
+        <nav class="navbar navbar-expand-lg">
+            <h1 class="h1 text">AYU</h1>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="/logout" class="btn text"><b>Logout</b></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
         
-        </div>
-        <div id="right-main">
-            <div class="container mt-4">
-                <div class="row mt-4" >
-                    <div class="col-md-6" id="information">
-                        <h4 >Medical Information:</h4>
-                        <ul class="list-group">
-                            <li class="list-group-item"><strong>Name:</strong><i>{{data['name']}}</i></li>
-                            <li class="list-group-item"><strong>Age:</strong><i>{{data['age']}}</i></li>
-                            <li class="list-group-item"><strong>Height:</strong><i>{{data['height']}}</i></li>
-                            <li class="list-group-item"><strong>Weight:</strong><i>{{data['weight']}}</i></li>
-                            <li class="list-group-item"><strong>Blood Group:</strong><i>{{data['bloodGroup']}}</i></li>
-                            <li class="list-group-item"><strong>Diseases:</strong><i>{{data['diseases']}}</i></li>
-                            <li class="list-group-item"><strong>Other Medical Information:</strong><i>{{data['additionalInfo']}}</i></li>
-                        </ul>
+        <div id="content">
+                <div class="container mt-4">
+                    <div class="row mt-4" >
+                        <div class="col-md-6" id="information">
+                            <h4 >Medical Information:</h4>
+                            <ul class="list-group">
+                                <li class="list-group-item"><strong>Name:</strong><i>{{data['name']}}</i></li>
+                                <li class="list-group-item"><strong>Age:</strong><i>{{data['age']}}</i></li>
+                                <li class="list-group-item"><strong>Height:</strong><i>{{data['height']}}</i></li>
+                                <li class="list-group-item"><strong>Weight:</strong><i>{{data['weight']}}</i></li>
+                                <li class="list-group-item"><strong>Blood Group:</strong><i>{{data['bloodGroup']}}</i></li>
+                                <li class="list-group-item"><strong>Diseases:</strong><i>{{data['diseases']}}</i></li>
+                                <li class="list-group-item"><strong>Other Medical Information:</strong><i>{{data['additionalInfo']}}</i></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
+            
         </div>
-    </div>
-    
+     
+</div>
+   
 
     <!-- Include Bootstrap JS and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

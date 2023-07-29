@@ -3,18 +3,18 @@
 <head>
     <title>AYU-Doctor</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../static/adminHomePage3.css">
+    <link rel="stylesheet" href="../static/adminHomePage6.css">
     .css">
 </head>
 <body>
     
 <div id="header">
     <nav class="navbar navbar-expand-lg">
-        <h3>AYU</h3>
+        <h3 class="h3 text">AYU</h3>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a href="/logout" class="btn btn-danger">Logout</a>
+                    <a href="/logout" class="btn text"><b>Logout</b></a>
                 </li>   
             </ul>
         </div>
@@ -23,11 +23,11 @@
     
     <div id="main">
         <div class="d-flex flex-row  justify-content-center">
-            <div class="p-2 rounded-2 " id="message"><h2 class="h2">Welcome  {{doctor['name']}}</h1>
+            <div class="p-2 rounded-2 " id="message"><h2 class="h2 text">Welcome  {{doctor['name']}}</h1>
                 {% with messages=get_flashed_messages() %}
                 {% if messages %}
                     {% for message in messages %}
-                    <p>{{message}}</p>
+                    <p class="text">{{message}}</p>
                     {% endfor %}
                 {% endif %}
                 {% endwith %}</div>
@@ -39,11 +39,11 @@
                     {% for user in data %} 
                         <div class=" col-lg-4 card">
                             <div class="card-body">
-                                <div class="card-title"><h2 class="h2">{{user['name']}}</h2></div>
+                                <div class="card-title"><h2 class="h2 text">{{user['name']}}</h2></div>
                                 <div class="card-text">
                                     <ul class="list-group">
-                                        <li class="list-group-item  " ><strong>Age:</strong>{{user['age']}}</li>
-                                        <li class="list-group-item"><strong>Diseases:</strong>{{user['diseases']}}</li>
+                                        <li class="list-group-item text" ><strong>Age:</strong>{{user['age']}}</li>
+                                        <li class="list-group-item text"><strong>Diseases:</strong>{{user['diseases']}}</li>
                                     </ul>
                                     <form action="/admin/userInfo" method="post">
                                         <button type="submit" class="btn btn-primary" name="email" value={{user['_id']}}>Click Here</button>
