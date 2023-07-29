@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(231, 215, 215);
+    background-image: url('https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1517&q=80');
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    width: 100%;
+
+}   
+#main{
+    margin: 0;
+    padding: 0;
+    min-height: 915px;
+   
+}
+
+#message{
+    margin-top: 50px;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+    min-height: 300px;
+    background-color: white;
+}
+#message h2{
+    padding: 100px;
+}
+
+#record-box{
+    margin-top: 100px;
+    width: 80%;
+    border-radius: 10px;
+    min-height:max-content;
+    background-color: white;
+}
+.card{
+    margin: 0;
+    border: 0;
+    width:300px;
+}
